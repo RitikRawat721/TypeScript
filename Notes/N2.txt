@@ -1,0 +1,24 @@
+# TS is Uses Static Typing unlike JS Which uses dynamic Typing
+
+- Static: In a strict way [Defining the type of variable : number, string ,etc]
+- Dyinamic: No rules [defining varibles with any specific type]
+
+ex: let age: number = 20;  [Here we are telling ts that this varible can contain only numbers]
+
+WRONG: age = "20" 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------|
+
+# DEBUGGING In TS
+1. In the config file you can enable [source map option] to create a map file There you will find mappings which is not for us to understand
+
+
+2. In vs code Go to debbugging section and create a launch.json file with node js
+-  In this file below the program key-pair put another key-pair.
+-  "preLaunchTask" : "tsc: build - tsconfig.json"  [Type this exactly the same]
+
+- In this debugging section you run your code line by line
+
+
+NOTE: add a breakpoint in the line of code from where you want to start debugging [In the left side]

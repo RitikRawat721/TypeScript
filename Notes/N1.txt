@@ -1,0 +1,48 @@
+basics of typescript
+
+To install ts [npm] : npm i -g typescript
+
+To check the version of typescript : tcs -v
+
+----------------------------------------------------------------------------------------------------------------------------------------|
+
+[1.] Type needs to compile the code unlike js [Which runs directly in the browser]
+
+    - This will compilation creates a js file 
+
+[*] To complile a ts file you need to be in the root directory of the file
+
+    - Type : tsc [nameOfTheFile]
+        EX : tsc index.ts
+
+----------------------------------------------------------------------------------------------------------------------------------------|
+
+[2.] You can set a configuration file for ts which can be usefull depending on the project
+
+- To do so
+- in the terminal type: tsc --init
+- Now you will have a tconfig.json file in your directly
+- You can open the file there will be a lots of option
+
+- They are commented out so just by removing the comment you can enable or disable any option
+
+----------------------------------------------------------------------------------------------------------------------------------------|
+
+[3.] Some common practice [for tsconfig file]
+
+(a.) In Language and Environment Section
+-  Target : Target is the version of Javascript 
+-  You can change the version of js that the typescript will compile to
+-  Commonly es2016 is used for all types of browsers
+
+(b.) Source directory [In Modules Section]
+-  rootDir : in this option you can change the directory to src folder [create first]
+-  This src folder will contain the main ts file.
+
+(c.) Outdir [In Emit section]
+-  Outdir : This option is to set the output of your compiled ts code [For the js file]
+-  Common practice is to use dist [short for distbributed] folder || You don't need to create the folder after compiling the folder will be created
+
+
+
+Note : after setting these configuration you can just TYPE: [tsc] in the terminal to complile your code
