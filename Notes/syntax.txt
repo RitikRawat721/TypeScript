@@ -1,0 +1,7 @@
+## FOR VARIABLES
+
+let "variableName": type = value
+let id: number = 14016 
+let user: string = "Hello World"
+
+(the type is always written in lowerCase)

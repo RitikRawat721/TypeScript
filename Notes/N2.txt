@@ -16,7 +16,10 @@ WRONG: age = "20"
 
 2. In vs code Go to debbugging section and create a launch.json file with node js
 -  In this file below the program key-pair put another key-pair.
--  "preLaunchTask" : "tsc: build - tsconfig.json"  [Type this exactly the same]
+-  "preLaunchTask" : "tsc: build - tsconfig.json"  [Type this exactly the same] 
+
+    [ What you need to put is path to the js file of the tsconfig.json] file
+    ex : "tsc: build - hello-world/tsconfig.json"
 
 - In this debugging section you run your code line by line
 
