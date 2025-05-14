@@ -8,7 +8,7 @@ var SeatChoice;
     SeatChoice[SeatChoice["WINDOW"] = 12] = "WINDOW";
 })(SeatChoice || (SeatChoice = {}));
 // enum automatically increase the value by 1 for the next constant if it's value is not given
-var hcSeat = SeatChoice.WINDOW; // 10
+var hcSeat = SeatChoice.AISLE; // 10
 var hcSeat2 = SeatChoice.MIDDLE; // 11
 var hcSeat3 = SeatChoice.WINDOW; // 12
 // Here we have specified string value as well as numeric value with the next one incremented

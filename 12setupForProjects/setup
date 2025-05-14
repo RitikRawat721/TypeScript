@@ -1,0 +1,43 @@
+// Making a tsconfig file 
+: tsc --init 
+- This will create a config file for ts like an boiler plate for all the options and functions of ts
+
+
+// Making a package.json // For node projects
+- type npm init -y    // -y will not ask much and make a quick package.json file
+
+
+// src and dist
+- src: is a common standard to keep the main code files [angular, reacts etc]
+- dist [distribution]: has the files for productions which is served to the end user
+* These 2 folders are automatically generated after you configer the options in the tsconfig file
+* Or you can generate them manually in the terminal [mkdir src dist] or right click make folder
+
+
+// How we use the generated ts file compiled to js
+- In this folder we have a index.html file where we have given a script tag with a src to the directory of js file 
+- so whatever ts code which in src gets compiled generates a js file in dist which is then used or served to/by the index.html
+- But we need to do some configuration in tsconfig.json file for that to happen
+
+
+// Configuring tsconfig.json File
+* Output Directory [for compiled files (js)] : outDir
+- outDir takes the path to which the js files generated after ts compiled files
+- so whenever the compilation of the ts files is done the generated file will go to the dist folder
+
+
+NOTE: compiling the ts file right now like normmal We will not get our generated file in the dist folder, it will be generated in the src folder
+      where our index.ts file is
+
+
+// Compiling TS code without mentioning root directory of the src codes
+- tsc -w
+- This cmd will compile and watch every file and changes in it [Any changes in the code it will compile again and make the changes accordingly]
+- This all also work based on the tsconifig file 
+* Using this command we will have out js file generated in the dist folder      
+
+
+// rootDir Option
+- This option take the directory to the main ts file in which you are writing your code
+- So whenever you enable this option by giving it the directory to the file 
+- You can just type "tsc"and it will compile the code automatically and you don't need to type 'tsc ./src/index.ts'
